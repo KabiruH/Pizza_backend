@@ -1,24 +1,42 @@
-# README
+# Description
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an app that views different restaurants and their pizzas
 
-Things you may want to cover:
+# Tools Used
+This project was built with the following tools:
 
-* Ruby version
+        Ruby ~ v3.1.+
 
-* System dependencies
+# Running/testing the application
 
-* Configuration
+This is a backend app deployed in 
 
-* Database creation
+    https://restaurant-backend-37xg.onrender.com/
+    
+The app shows on a browser in the form of a JSON. A user can view this by adding endpoints such as
 
-* Database initialization
+    - restaurants
+    
+    - restaurants/3 (or any other number - leading up to 20)
+    
+    - pizza1s (to list the pizzas)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+The app can also  be viewed through the VS code app, 
+    
+run 
 
-* Deployment instructions
+    rails server  
+    
+on the terminal to start up the app. To view the data, run the local host URL and view all the data following the endpoints as in the first one.
+   
+# Authors
 
-* ...
+This project was contributed to by:
+
+Kabiru
+
+# License
+
+The project is licensed under Apache 2.0.
+
