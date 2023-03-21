@@ -10,7 +10,7 @@ rescue_from ActiveRecord::RecordNotFound, with: :render_response_not_found
 
     def show 
         restaurant = get_restaurant
-        render json: restaurant, include: :pizza1s
+        render json: restaurant, include_pizza1s: true
 
     end
 
