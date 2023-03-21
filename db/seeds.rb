@@ -5,3 +5,31 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+puts "create deliciousness"
+
+10.times do
+    Pizza1.create(
+      name: Faker::Food.dish,
+      ingredients: Faker::Food.ingredient
+    )
+  end
+  # Create 5 restaurants
+10.times do
+    restaurant = Restaurant.create(
+      name: Faker::Restaurant.name,
+      address: Faker::Address.full_address
+    )
+ # Add random pizzas to the restaurant with random prices between 1 and 30
+Pizza1.all.sample(5).each do |pizza|
+    restaurant_pizza = Restaurantpizza.create(
+      price: rand(1..30),
+      restaurant_id: restaurant.id,
+      pizza1_id: pizza.id
+    )
+end
+end
+
+
+puts "we done"
+
